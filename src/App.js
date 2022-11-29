@@ -1,75 +1,64 @@
 import "./App.css";
+import { useState } from "react";
+
+import Content from "./components/Content";
+import WorkExperience from "./components/WorkExperience";
+import Pill from "./components/Pill";
+import FooterBlocks from "./components/Footer";
+import github from "./images/211904_social_github_icon.png";
+
+import email from "./images/134146_mail_email_icon.png";
+import linkedin from "./images/104493_linkedin_icon.png";
+import data from "./data.json";
 
 function App() {
+  const [lang, setLang] = useState("en");
+  const {
+    badge,
+    aboutMe,
+    education,
+    personalSkills,
+    technicalSkills,
+    workExp,
+    footer,
+  } = data[lang];
   return (
     <div className="App">
-      <header>
-        <p className="pheader"></p>
-        <div className="name-box">
-          <h1 className="name">EMILIJA VOLOSEVIČIŪTĖ</h1>
-          <h2 className="occupation">PROGRAMMER</h2>
-        </div>
+      <div className="GreenBlock"></div>
+
+      <header className="Header">
+        <h1 className="Header-h1">{badge.badgeName}</h1>
+        <h2 className="Header-h2">{badge.profession}</h2>
       </header>
-      <main>
-        <section className="grid-container">
-          <div className="a">
-            <h3 className="headers">ABOUT ME</h3>
-            <div>
-              <div className="hr1"></div>
-              <div className="hr2"></div>
-            </div>
-            <p className="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem laborum quam est consectetur atque itaque error
-              numquam minima ipsam placeat, adipisci neque sunt non minus
-              deleniti enim cupiditate accusantium! Ab.
-            </p>
-          </div>
-          <div className="b">
-            <h3 className="headers">LINKS</h3>
-            <div>
-              <div className="hr1"></div>
-              <div className="hr2"></div>
-            </div>
+      <button className="Button" onClick={() => setLang("en")}>
+        EN
+      </button>
+      <button className="Button" onClick={() => setLang("lt")}>
+        LT
+      </button>
+      <section>
+        <div className="AboutMe-Links">
+          <Content className="Left-block" title={aboutMe.links}>
             <ul className="links">
               <li>
-                {" "}
-                <a href="https://twitter.com/">
-                  <img
-                    src="104501_twitter_bird_icon.png"
-                    alt="twitter-logo"
-                    width="30"
-                    height="30"
-                  />
-                  TWITTER/username
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/griddb/griddb?gclid=CjwKCAjw7vuUBhBUEiwAEdu2pNK6J9GnjpnxstEIo9TX26M9id-wGgnY0DOJyeAiBpJJD7felG2yYxoCVH0QAvD_BwE">
-                  <img
-                    src="211904_social_github_icon.png"
-                    alt="github-logo"
-                    width="30"
-                    height="30"
-                  />
+                <a href="https://github.com/emilijavol" className="Soc-link ">
+                  <img src={github} alt="github-logo" width="30" height="30" />
                   GITHUB/username
                 </a>
               </li>
               <li>
-                <a href="https://mail.google.com/mail/u/1/">
-                  <img
-                    src="134146_mail_email_icon.png"
-                    alt="mail-logo"
-                    width="30"
-                    height="30"
-                  />
+                <a href="mailto:emilijavol@gmail.com" className="Soc-link ">
+                  <img src={email} alt="mail-logo" width="30" height="30" />
                   EMAIL/emailadress
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/">
+                <a
+                  href="https://www.linkedin.com/in/emilija-volosevi%C4%8Di%C5%ABt%C4%97-433a73258/"
+                  className="Soc-link "
+                >
                   <img
-                    src="104493_linkedin_icon.png"
+                    src={linkedin}
                     alt="linkedin-logo"
                     width="30"
                     height="30"
@@ -78,134 +67,86 @@ function App() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="c">
-            <h3 className="headers">EDUCATION</h3>
-            <div>
-              <div className="hr1"></div>
-              <div className="hr2"></div>
-            </div>
-            <div>
-              <p className="text">KAUNO KOLEGIJA</p>
-              <p className="text">2019-2021</p>
-              <p className="text">Profesinis bakalauras</p>
-            </div>
-            <div className="hr3"></div>
-            <div>
-              <p className="text">JUOZO BALČIKONIO GIMNAZIJA</p>
-              <p className="text">2016-2019</p>
-              <p className="text">Pagrindinis išsilavinimas</p>
-            </div>
-          </div>
-          <div className="d">
-            <h3 className="headers">TECHNICAL SKILLS</h3>
-            <div>
-              <div className="hr1"></div>
-              <div className="hr2"></div>
-            </div>
-            <div className="colour">
-              <h3 className="text">JAVASCRIPT</h3>
-              <h3 className="text">NODE.JS</h3>
-              <h3 className="text">REACT.JS</h3>
-            </div>
-          </div>
-          <div className="e">
-            <h3 className="headers">PERSONAL SKILLS</h3>
-            <div className="hr1"></div>
-            <div className="hr2"></div>
-            <div className="colour">
-              <h3 className="text">TEAMWORK</h3>
-              <h3 className="text">COMMUNICATION</h3>
-              <h3 className="text">ORGANIZATION</h3>
-            </div>
-          </div>
-        </section>
+          </Content>
+          <Content className="Right-block" title={aboutMe.about}>
+            <p className="Paragraph">{aboutMe.infoAboutMe}</p>
+          </Content>
+        </div>
+      </section>
 
-        <section>
-          <h3 className="headers">WORK EXPERIENCE</h3>
-          <div className="hr1"></div>
-          <div className="hr2"></div>
-          <section className="grid-container2">
-            <div className="f">
-              <div className="text">
-                <p>2021.07 - UAB "Pasoga", Mėsininkas</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt, repudiandae repellat quo numquam sequi laboriosam
-                  nam voluptatibus optio perferendis nobis delectus sint
-                  voluptatum porro accusantium ad nesciunt doloribus aspernatur?
-                  Sapiente.
-                </p>
-                <p>Lorem</p>
-                <p>Ipsum</p>
-              </div>
-            </div>
-            <div className="g">
-              <div className="text">
-                <p>2020.01-2021.06 - UAB "Lėvuo, Vyr. pardavėja konsultantė</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae quas, eligendi exercitationem pariatur fugiat
-                  aperiam eius vel ratione iure labore nostrum quaerat?
-                  Cupiditate mollitia dignissimos ullam commodi nemo, ad sunt.
-                </p>
-                <p>Lorem</p>
-                <p>Ipsum</p>
-              </div>
-            </div>
-            <div className="h">
-              <div className="text">
-                <p>2019.05 - 2019.09, UAB "Depo", Vyr. kasininkė</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  modi, obcaecati quisquam tempora ad perspiciatis maxime
-                  commodi suscipit ut iure consectetur, deleniti a quo eaque
-                  cumque pariatur cum quasi odio? deleniti consectetur ut.
-                </p>
-                <p>Lorem</p>
-                <p>Ipsum</p>
-              </div>
-            </div>
-          </section>
-        </section>
-      </main>
-      <div className="hr1"></div>
-      <div className="hr2"></div>
+      <section>
+        <div className="Education">
+          <Content title={education.title}>
+            <p className="text">{education.schoolThree}</p>
+            <p className="text">2022-2023</p>
+            <p className="text">{education.FrontEnd}</p>
+            <div className="Hr"></div>
+            <p className="text">{education.schoolOne}</p>
+            <p className="text">2019-2021</p>
+            <p className="text">{education.educationLevel}</p>
+            <div className="Hr"></div>
+            <p className="text">{education.schoolTwo}</p>
+            <p className="text">2016-2019</p>
+            <p className="text">{education.educationSecondLevel}</p>
+          </Content>
 
-      <footer className="grid-container3">
-        <div className="m">
-          <div className="footer">
-            <h3 className="headers">LOCATION</h3>
-            <p className="gms">Gatve 16-3</p>
-            <p className="gms"> Miestas, šalis</p>
-          </div>
+          <Content title={personalSkills.titleSkills}>
+            <Pill className="skill-one">{personalSkills.firstSkill}</Pill>
+            <Pill className="skill-one">{personalSkills.secondSkill}</Pill>
+            <Pill className="skill-one">{personalSkills.thirdSkill}</Pill>
+          </Content>
+
+          <Content title={technicalSkills.technicalTitle}>
+            <Pill className="skill-one">HTML</Pill>
+            <Pill className="skill-one">CSS</Pill>
+            <Pill className="skill-one">JAVASCRIPT</Pill>
+            <Pill className="skill-one">NODE.JS</Pill>
+            <Pill className="skill-one">REACT.JS</Pill>
+          </Content>
         </div>
-        <div className="n">
-          <div className="footer">
-            <h3 className="headers">CONTACT</h3>
-            <p className="hover">
-              <a href="https://mail.google.com/mail/u/1/">
-                emilijavol@gmail.com
-              </a>{" "}
-            </p>
-            <p className="hover">
-              <a href="https://www.google.com/search?q=pjone&rlz=1C1CHBD_enLT813LT813&oq=pjone&aqs=chrome..69i57j0i271l3j69i60l4.727j0j4&sourceid=chrome&ie=UTF-8">
-                +37067055099
-              </a>
-            </p>
+      </section>
+
+      <section>
+        <Content title={workExp.workExperience}>
+          <div className="WorkExperience-FlexBox">
+            <WorkExperience position={workExp.positionOne}>
+              {workExp.descriptionOne}
+            </WorkExperience>
+            <WorkExperience position={workExp.positionTwo}>
+              {workExp.descriptionTwo}
+            </WorkExperience>
+            <WorkExperience position={workExp.positionThree}>
+              {workExp.descriptionThree}
+            </WorkExperience>
           </div>
-        </div>
-        <div className="k">
-          <div className="footer">
-            <h3 className="headers">SOCIAL</h3>
-            <p className="hover">
-              <a href="https://twitter.com/">Twitter</a>
-            </p>
-            <p className="hover">
-              <a href="https://www.linkedin.com/">Linkedin</a>
-            </p>
-          </div>
-        </div>
+        </Content>
+      </section>
+
+      <footer className="Footer">
+        <FooterBlocks title={footer.adress}>
+          {footer.street}
+          <br />
+          {footer.country}
+        </FooterBlocks>
+        <FooterBlocks title={footer.contacts}>
+          <a href="emilijavol@gmail.com" className="Soc-link ">
+            emilijavol@gmail.com
+          </a>
+          <br />
+          <a href="tel:+37067055099" className="Soc-link ">
+            +37067055099
+          </a>
+        </FooterBlocks>
+        <FooterBlocks title={footer.socials}>
+          <a
+            href="https://www.linkedin.com/in/emilija-volosevi%C4%8Di%C5%ABt%C4%97-433a73258/"
+            target="_blank"
+            rel="noreferrer"
+            className="Soc-link "
+          >
+            Linkedin
+          </a>
+        </FooterBlocks>
       </footer>
     </div>
   );

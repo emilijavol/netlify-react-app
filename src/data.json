@@ -1,0 +1,90 @@
+{
+  "lt": {
+    "badge": {
+      "badgeName": "Emilija Volosevičiūtė",
+      "profession": "Front-end Programuotoja"
+    },
+    "aboutMe": {
+      "links": "Nuorodos",
+      "about": "Apie mane",
+      "infoAboutMe": "Jaunesnioji Front-End programuotoja su potraukiu iššūkiams ir motyvacija mokytis. Perkvalifikacinėje kelionėje į IT rinką. Spalvingas darbo pagrindas, kuris leido man lavinti įvairius įgūdžius, tokius kaip klientų aptarnavimas ir pardavimas, produktų rinkodara, asmeninio ir komandinio darbo organizavimas ir daugelis kitų. "
+    },
+    "education": {
+      "title": "Išsilavinimas",
+      "schoolOne": "KAUNO KOLEGIJA",
+      "schoolTwo": "JUOZO BALČIKONIO GIMNAZIJA",
+      "educationLevel": "Profesinis bakalauras",
+      "educationSecondLevel": "Pagrindinis išsilavinimas"
+    },
+    "personalSkills": {
+      "titleSkills": "Asmeninės savybės",
+      "firstSkill": "KOMANDINIS DARBAS",
+      "secondSkill": "KOMUNIKACIJA",
+      "thirdSkill": "ORGANIZUOTUMAS"
+    },
+    "technicalSkills": {
+      "technicalTitle": "Techninės savybės"
+    },
+    "workExp": {
+      "workExperience": "Darbo patirtis",
+      "positionOne": "2021.06 - iki dabar, UAB 'PASOGA', MĖSININKĖ",
+      "positionTwo": "2020.01 - 2021.06, UAB 'LEVUO', PARDAVĖJA - KONSULTANTĖ",
+      "positionThree": "2018.10 - 2019.06, UAB 'KILMINĖ', VYR.KASININKĖ",
+      "descriptionOne": "Mėsos brandinimo ir pjaustymo technologijos, parduotuvės ir mėsinės priežiūra. Degustacijų organizavimas, darbas su restoranais ir kitais klientais, produktų ir aptarnavimo kokybės užtikrinimas. Naujų darbuotojų mokymas ir integravimas darbo aplinkoje. Įgyti įgūdžiai: darbas su Revel sistema, klientų aptarnavimas, mėsininkystė, Darbo organizavimas",
+      "descriptionTwo": "Pardavimų didinimas bendraujant ir dalinantis žiniomis su klientais. Kasdieninių parduotuvės operacijų vykdymas. Įgyti įgūdžiai: klientų aptarnavimas ir pardavimai, marketingas, gebėjimas produktyviai dirbti stresinėse situacijose .",
+      "descriptionThree": "Atsakinga už parduotuvės darbuotojų darbo organizavimą, finansines operacijas ir dokumentaciją. Užsieniečių darbuotojų mokymai ir inetegravimas į darbo vietą."
+    },
+    "footer": {
+      "street": "Juozapavičius g. 7",
+      "country": "Kaunas, Lietuva",
+      "adress": "Adresas",
+      "contacts": "Kontaktai",
+      "socials": "Socialiniai tinklai"
+    }
+  },
+  "en": {
+    "badge": {
+      "badgeName": "Emilija Volosevičiūtė",
+      "profession": "Front-end Developer"
+    },
+    "aboutMe": {
+      "links": "Links",
+      "about": "About me",
+      "infoAboutMe": "Junior Front-End developer with a drive for challenges and learning. On a requalification journey to the IT market. A colorful working background which allowed me to develop various skills such as costumer service and sales, product marketing, personal and team job organization and many more."
+    },
+    "education": {
+      "title": "Education",
+      "schoolOne": "KAUNAS COLLEGE",
+      "schoolTwo": "JUOZAS BALCIKONIS GYMNASIUM",
+      "schoolThree": "CODEACADEMY",
+      "FrontEnd": "Front-End Development",
+      "educationLevel": "Profesional bachelor's degree",
+      "educationSecondLevel": "Secondary education"
+    },
+    "personalSkills": {
+      "titleSkills": "Personal skills",
+      "firstSkill": "TEAMWORK",
+      "secondSkill": "COMMUNICATION",
+      "thirdSkill": "ORGANIZATION"
+    },
+    "technicalSkills": {
+      "technicalTitle": "Technical skills"
+    },
+    "workExp": {
+      "workExperience": "Work experience",
+      "positionOne": "2021.06 - until now, UAB 'PASOGA', BUTCHER",
+      "positionTwo": "2020.01 - 2021.06, UAB 'LEVUO', RETAIL ASSOCIATE",
+      "positionThree": "2018.10 - 2019.06, UAB 'KILMINĖ', HEAD CASHIER",
+      "descriptionOne": "Meat aging technologies and butchering skills, store and butchery maintenance. Conducting tastings, working with restaurants and other clients, and ensuring quality products and service. Responsible for new employee integration into the workplace. Skills achieved: Working with the Revel system, costumer service, butchery, job organization",
+      "descriptionTwo": "Driving sales through engagement of customers, suggestive selling, and sharing product knowledge. Assistance in daily store operations. Developed skills: customer service and sales, product marketing, and working in a high-stress environment.",
+      "descriptionThree": "Responsible for organizing work for the store employees, financial store operations, and documentation. Working with foreign employees and integrating them into the workplace."
+    },
+    "footer": {
+      "street": "Juozapavičius street 7",
+      "country": "Kaunas, Lithuania",
+      "adress": "Adress",
+      "contacts": "Contacts",
+      "socials": "Socials"
+    }
+  }
+}
