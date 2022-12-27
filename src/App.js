@@ -43,13 +43,13 @@ function App() {
               <li>
                 <a href="https://github.com/emilijavol" className="Soc-link ">
                   <img src={github} alt="github-logo" width="30" height="30" />
-                  GITHUB/username
+                  GITHUB
                 </a>
               </li>
               <li>
                 <a href="mailto:emilijavol@gmail.com" className="Soc-link ">
                   <img src={email} alt="mail-logo" width="30" height="30" />
-                  EMAIL/emailadress
+                  EMAIL
                 </a>
               </li>
               <li>
@@ -63,7 +63,7 @@ function App() {
                     width="30"
                     height="30"
                   />
-                  LINKEDIN/username
+                  LINKEDIN
                 </a>
               </li>
             </ul>
