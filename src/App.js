@@ -102,6 +102,7 @@ function App() {
             <Pill className="skill-one">JAVASCRIPT</Pill>
             <Pill className="skill-one">NODE.JS</Pill>
             <Pill className="skill-one">REACT.JS</Pill>
+            <Pill className="skill-one">REDUX</Pill>
           </Content>
         </div>
       </section>
@@ -129,7 +130,7 @@ function App() {
           {footer.country}
         </FooterBlocks>
         <FooterBlocks title={footer.contacts}>
-          <a href="emilijavol@gmail.com" className="Soc-link ">
+          <a href="mailto:emilijavol@gmail.com" className="Soc-link ">
             emilijavol@gmail.com
           </a>
           <br />
