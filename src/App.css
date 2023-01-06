@@ -9,7 +9,7 @@
 }
 .GreenBlock {
   height: 61px;
-  background: rgb(151, 116, 90);
+  background: rgb(160, 160, 236);
 }
 
 .Header {
@@ -52,7 +52,7 @@
 
 button {
   border-radius: 6px;
-  background: rgb(151, 116, 90);
+  background: rgb(160, 160, 236);
   border: 1px solid;
   color: black;
   padding: 3px 9px;
